@@ -72,7 +72,7 @@ pip install -r requirements.txt
 
 ### Analysis Tool
 ```bash
-python compare_results.py
+python scripts/compare_results.py
 ```
 Shows detailed statistics and items needing attention.
 
@@ -82,23 +82,34 @@ Shows detailed statistics and items needing attention.
 automation/
 ├── match_invoice_elite.py          # Main elite script
 ├── match_invoice.py                # Legacy script (backup)
-├── compare_results.py              # Analysis tool
+├── requirements.txt                # Python dependencies
+├── README.md                       # Main documentation
+├── LICENSE                         # MIT License
 │
-├── modules/                        # Core modules
+├── modules/                        # Core AI modules
 │   ├── pharmaceutical_utils.py    # Drug name parsing & intelligence
 │   ├── advanced_matcher.py        # Multi-algorithm matching
 │   ├── learning_engine.py         # Corrections & learning
 │   └── __init__.py
 │
+├── scripts/                        # Helper scripts
+│   └── compare_results.py         # Analysis tool
+│
+├── docs/                           # Documentation
+│   ├── README_ELITE.md            # Detailed user guide
+│   ├── DEMO_LEARNING.md           # Learning workflow guide
+│   ├── SUMMARY.md                 # Technical overview
+│   ├── SETUP_DATA_FILES.md        # Data file setup guide
+│   └── GITHUB_SETUP.md            # GitHub upload instructions
+│
 ├── data/                           # Auto-created on first run
 │   ├── learned_mappings.db        # Learning database
 │   └── match_corrections.xlsx     # Your corrections (optional)
 │
-├── requirements.txt                # Python dependencies
-├── README.md                       # This file
-├── README_ELITE.md                # Detailed user guide
-├── DEMO_LEARNING.md               # Learning workflow guide
-└── SUMMARY.md                     # Technical overview
+├── MasterListNew.xlsx              # Your POS master (not in git)
+├── PurchaseReport.xlsx             # Purchase history (not in git)
+├── InvoiceMatchingTemplate.xlsx   # Invoice input (not in git)
+└── InvoiceMatchingTemplate_out.xlsx # Results (not in git)
 ```
 
 ## 📋 Required Files (Not in Git)
@@ -187,9 +198,11 @@ Final Score = 55% Name + 30% Supplier + 15% Cost
 
 ## 📚 Documentation
 
-- **[README_ELITE.md](README_ELITE.md)** - Complete user manual
-- **[DEMO_LEARNING.md](DEMO_LEARNING.md)** - Learning workflow demo
-- **[SUMMARY.md](SUMMARY.md)** - Technical architecture
+- **[docs/README_ELITE.md](docs/README_ELITE.md)** - Complete user manual
+- **[docs/DEMO_LEARNING.md](docs/DEMO_LEARNING.md)** - Learning workflow demo
+- **[docs/SUMMARY.md](docs/SUMMARY.md)** - Technical architecture
+- **[docs/SETUP_DATA_FILES.md](docs/SETUP_DATA_FILES.md)** - Data file setup
+- **[docs/GITHUB_SETUP.md](docs/GITHUB_SETUP.md)** - GitHub instructions
 
 ## 🏆 Performance Metrics
 
