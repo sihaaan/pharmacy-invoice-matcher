@@ -1,0 +1,37 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Data files (sensitive)
+MasterListNew.xlsx
+PurchaseReport.xlsx
+InvoiceMatchingTemplate.xlsx
+InvoiceMatchingTemplate_out.xlsx
+data/learned_mappings.db
+data/match_corrections.xlsx
+
+# Excel temp files
+~$*.xlsx
+~$*.xls
+
+# IDE
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
